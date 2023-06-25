@@ -68,7 +68,7 @@ p {
 
 @font-face {
   font-family: "Cirka";
-  src: url("/assets/fonts/PPCirka-Variable.ttf") format("ttf");
+  src: url("../fonts/PPCirka-Variable.ttf");
 }
 .cyber-br {
   flex-basis: 0;
