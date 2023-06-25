@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Refuge"
+title: "∴ 𝑅 𝐸 𝐹 𝒰 𝒢 𝐸 ∴"
 ---
 
 
