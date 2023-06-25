@@ -13,31 +13,6 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
-
-.poster {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15%;
-}
-.poster a {
-  width: 100%;
-  height: 100%;
-}
-.poster img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.poster img:hover {
-  scale: 1.05;
-  transition: 0.15s ease-in-out all;
-  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 }
 
 p {
@@ -81,7 +56,7 @@ p {
 }
 .cyber-br svg {
   stroke: #e8e8e8;
-  stroke-width: 2px;
+  stroke-width: 1px;
 }
 
 .cyber-br_block {
@@ -95,17 +70,35 @@ p {
 .cyber-br001 {
   width: 8px;
   flex: 1;
-  border-left: 2px solid #e8e8e8;
-  border-top: 2px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
 }
 
 .cyber-br002 {
   width: 8px;
   flex: 1;
-  border-right: 2px solid #e8e8e8;
-  border-bottom: 2px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
 }
 
+@media only screen and (max-width: 576px) {
+  .cyber-br {
+    padding: 16px;
+    flex-direction: row;
+    width: 100vw;
+  }
+  .cyber-br_block {
+    height: 8px;
+    width: 24px;
+    margin: 0 16px 0 16px;
+  }
+  .cyber-br001 {
+    height: 8px;
+  }
+  .cyber-br002 {
+    height: 8px;
+  }
+}
 .bg {
   position: fixed;
   top: -50%;
@@ -159,12 +152,12 @@ p {
 .hello {
   position: absolute;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .container-left {
   flex: 1 1 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 48px;
   display: flex;
   flex-direction: column;
@@ -175,6 +168,56 @@ p {
   flex: 1 1 100%;
   height: 100vh;
   padding: 48px;
+}
+
+@media only screen and (max-width: 576px) {
+  .hello {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    gap: 24px;
+  }
+  .container-left {
+    padding: 16px;
+    min-height: 100vh;
+  }
+  .container-right {
+    padding: 16px;
+  }
+}
+.poster {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15%;
+}
+.poster a {
+  width: 100%;
+  height: 100%;
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.poster img:hover {
+  scale: 1.05;
+  transition: 0.15s ease-in-out all;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
+}
+
+header {
+  width: 100%;
+}
+header svg {
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 $backgroundColor: #161616;
 $bodyColor: #e8e8e8;
 $bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$mobile: 576px;
 
 body {
   background: $backgroundColor;
@@ -18,43 +19,13 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 
-
-
-
-.poster {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15%;
-
-  a {
-width: 100%;
-height: 100%;
-
-  }
-
-  img {
-width: 100%;
-height: 100%;
-    object-fit: contain;
-  }
-}
-
-.poster img:hover{
-  scale:1.05;
-  transition: .15s ease-in-out all;
-  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
-}
 
 p {
   font-family: 'Cirka';
   font-size: 18px;
   text-transform: uppercase;
-  
+
 }

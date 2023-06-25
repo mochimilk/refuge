@@ -1,21 +1,39 @@
 .hello {
-    position: absolute;
-    display: flex;
-    min-height: 100vh;  
-  }
-  
-  .container-left {
-    flex: 1 1 100%;
-    min-height: 100vh;
-    padding: 48px;
-    display: flex;
+  position: absolute;
+  display: flex;
+  height: 100vh;
+}
+
+.container-left {
+  flex: 1 1 100%;
+  height: 100vh;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.container-right {
+  flex: 1 1 100%;
+  height: 100vh;
+  padding: 48px;
+}
+
+
+@media only screen and (max-width: $mobile) {
+  .hello {
     flex-direction: column;
-    justify-content: space-between;
-  
+    height: auto;
+    width: 100vw;
+    gap: 24px;
   }
-  
+  .container-left {
+    padding: 16px;
+    min-height: 100vh;
+  }
   .container-right {
-    flex: 1 1 100%; 
-    height: 100vh;
-    padding: 48px;
+    padding: 16px;
   }
+}
