@@ -191,7 +191,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15%;
+  padding: 16%;
 }
 .poster a {
   width: 100%;
@@ -209,6 +209,11 @@ p {
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 }
 
+@media only screen and (max-width: 576px) {
+  .poster {
+    padding: 8%;
+  }
+}
 header {
   width: 100%;
 }
