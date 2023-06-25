@@ -1,0 +1,36 @@
+.cyber-br {
+  flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    stroke-linecap: round;
+    opacity: .5;
+    padding: 48px;
+  
+    svg {
+      stroke: $bodyColor;
+      stroke-width: 2px;
+    }
+  }
+  
+  .cyber-br_block {
+    background-color: $bodyColor;
+    width: 8px;
+    height: 48px;
+    border-radius: 500px;
+    margin: 24px 0 24px 0;
+  }
+  
+  .cyber-br001 {
+    width: 8px;
+    flex: 1;
+    border-left: 2px solid $bodyColor;
+    border-top: 2px solid $bodyColor;
+  }
+  
+  .cyber-br002 {
+    width: 8px;
+    flex: 1;
+    border-right: 2px solid $bodyColor;
+    border-bottom: 2px solid $bodyColor;
+  }

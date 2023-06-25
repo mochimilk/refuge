@@ -1,0 +1,181 @@
+body {
+  background: #161616;
+  color: #e8e8e8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hello {
+  position: absolute;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container-left {
+  flex: 1 1 100%;
+  min-height: 100vh;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-right {
+  flex: 1 1 100%;
+  height: 100vh;
+  padding: 48px;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15%;
+}
+.poster a {
+  width: 100%;
+  height: 100%;
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.poster img:hover {
+  scale: 1.05;
+  transition: 0.15s ease-in-out all;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
+}
+
+p {
+  font-family: "Cirka";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  font-family: "Cirka";
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  margin-top: 6px;
+}
+.nav img {
+  width: 32px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: "Cirka";
+  src: url("/assets/fonts/PPCirka-Variable.ttf");
+}
+.cyber-br {
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  stroke-linecap: round;
+  opacity: 0.5;
+  padding: 48px;
+}
+.cyber-br svg {
+  stroke: #e8e8e8;
+  stroke-width: 2px;
+}
+
+.cyber-br_block {
+  background-color: #e8e8e8;
+  width: 8px;
+  height: 48px;
+  border-radius: 500px;
+  margin: 24px 0 24px 0;
+}
+
+.cyber-br001 {
+  width: 8px;
+  flex: 1;
+  border-left: 2px solid #e8e8e8;
+  border-top: 2px solid #e8e8e8;
+}
+
+.cyber-br002 {
+  width: 8px;
+  flex: 1;
+  border-right: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
