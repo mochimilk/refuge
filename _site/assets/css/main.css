@@ -16,27 +16,6 @@ body {
   overflow: hidden;
 }
 
-.hello {
-  position: absolute;
-  display: flex;
-  min-height: 100vh;
-}
-
-.container-left {
-  flex: 1 1 100%;
-  min-height: 100vh;
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.container-right {
-  flex: 1 1 100%;
-  height: 100vh;
-  padding: 48px;
-}
-
 .poster {
   width: 100%;
   height: 100%;
@@ -176,6 +155,26 @@ p {
   100% {
     transform: translate(5%, 0);
   }
+}
+.hello {
+  position: absolute;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container-left {
+  flex: 1 1 100%;
+  min-height: 100vh;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-right {
+  flex: 1 1 100%;
+  height: 100vh;
+  padding: 48px;
 }
 
 /*# sourceMappingURL=main.css.map */
