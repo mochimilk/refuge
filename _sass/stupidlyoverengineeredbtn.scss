@@ -7,7 +7,7 @@
     --g: 20px; /* the gap between the border and image */
     
     padding: calc(var(--g) + var(--t));
-    outline: var(--t) solid var(--color-lightgray); /* the color here */
+    outline: var(--t) solid #ffa692; /* the color here */
     outline-offset: calc(-1*var(--t));
     -webkit-mask:
       conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
@@ -28,7 +28,7 @@ svg {
     -ms-transition: all ease 0.5s;
     transition: all ease 0.5s; 
     overflow: visible;
-    stroke: var(--color-lightgray);
+    stroke: #ffa692;
 }
 
 

@@ -9,16 +9,23 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;700&display=swap" />
 </head>
 
-<script src="bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
+
+
+
+<div class="bg"></div>
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
 
 <body>
   <div class="radio-box">
     <div class="herosection" id="parallax">
       <div class="nav-container">
-        <nav class="headertxt">
-          <a href="#abinternal">Main</a> / <a href="#abinternal">About</a> / <a href="#msinternal">Mission</a> / <a
-            href="#hwinternal">Take Refuge</a> / <a href="#cuinternal">Contact</a>
+        <nav>
+          <a href="/refuge">Main</a> ⊹ <a href="#abinternal">About</a> ⊹ <a href="#msinternal">Mission</a> ⊹ <a
+            href="#hwinternal">Take Refuge</a> ⊹ <a href="#cuinternal">Contact</a>
         </nav>
         <!-- <div class="fancyobj">
                     <img class="glass002-icon" loading="eager" alt="" src="/refuge/assets/uploads/Pngs/GlassObj.png" />
@@ -27,23 +34,22 @@
       <div class="logo-container">
         <div class="refuge-logo">
 
-          <img class="rletter-icon" 
-            src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
+          <img class="rletter-icon" src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
 
 
-          <img class="eletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+          <img class="eletter-icon" src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
 
 
-          <img class="fletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
+          <img class="fletter-icon" src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
 
 
-          <img class="uletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
+          <img class="uletter-icon" src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
 
 
-          <img class="gletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
+          <img class="gletter-icon" src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
 
 
-          <img class="eletter-icon1"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+          <img class="eletter-icon1" src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
 
         </div>
       </div>
@@ -79,7 +85,7 @@
               </div>
             </div> -->
 
-            
+
 
             <div class="codertxt-l">
               <div class="input-sys">
@@ -87,9 +93,11 @@
               </div>
               <br>
               <div class="input-user">
-                
-               <div class="user-container">x= <div id="x-user"></div></div>
-               <div class="user-container">y= <div id="y-user"></div></div> <br>
+
+                <div class="user-container">x= <div id="x-user"></div>
+                </div>
+                <div class="user-container">y= <div id="y-user"></div>
+                </div> <br>
               </div>
             </div>
             <div class="codertxt-r">
@@ -98,7 +106,8 @@
               </div>
               <br>
               <div class="output-user">
-                <div class="user-container">print = <div id="print-user"></div></div>
+                <div class="user-container">print = <div id="print-user"></div>
+                </div>
                 <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
               </div>
             </div>
@@ -128,21 +137,7 @@
 
 </div>
 
-              <!-- <div class="logo-container">
-                <img class="catwasnthere-icon" alt="" src="/refuge/assets/uploads/SVGS/Name.svg" />
-                <img class="c-u-emails" alt="" src="/refuge/assets/uploads/SVGS/Name2.svg" />
-              </div>
-              <div class="frame-parent">
-                <img class="frame-child" loading="eager" alt=""
-                  src="/refuge/assets/uploads/SVGS/group-63.svg" />
-                <img class="frame-item" loading="eager" alt=""
-                  src="/refuge/assets/uploads/SVGS/group-63.svg" />
-                <img class="frame-inner" alt="" src="/refuge/assets/uploads/SVGS/group-63.svg" />
-              </div>
-              <div class="logo-container1">
-                <img class="navbar-main-icon" alt="" src="/refuge/assets/uploads/SVGS/vector-27-1.svg" />
-                <img class="p-l-c-header-top" alt="" src="/refuge/assets/uploads/SVGS/vector-28-1.svg" />
-              </div> -->
+
             </a>
           </div>
         </div>
@@ -155,49 +150,53 @@
         frameborder="0"></iframe>
       <section class="module001" id="abinternal">
         <div class="module001-text-container">
-          <h3>About</h3>
-          <p> We are an inclusive community, both physically and virtually, that fosters a
-            judgment-free environment. Our community welcomes individuals from all walks of life, including
-            those who may feel like misfits or outcasts. We provide a safe haven where members can find
+          <h4>⊹ About</h4>
+          <p class="lg"> We are an inclusive community that fosters a
+            judgment-free environment in both our virtual and physical worlds. Our community welcomes individuals from
+            all walks of life — including
+            those who may feel like misfits or outcasts — and provides a safe haven where members can find
             peace, love, kindness, freedom, support, sympathy, empathy, mentorship, and friendship. </p>
         </div>
         <img class="vrcdjss-icon" loading="eager" alt="" src="/refuge/assets/uploads/Pngs/VrcpepSS.png" />
       </section>
       <section class="module001" id="msinternal">
         <div class="module001-text-container">
-          <h3>Mission</h3>
-          <div class="we-are-an-container">
-            <p  > Our mission is to offer a comfortable and engaging platform for
-              entertainment and escapism through various forms of creative expression such as music, art,
+          <h4>⊹ Mission</h4>
+          <div class="module-stacker">
+            <p class="lg"> Our mission is to create a safe space for diverse forms of creative expression across music,
+              art,
               media, gaming, dancing, and communication. We embrace diversity and celebrate both the
               familiar and unfamiliar, the light and dark, the joyous and sorrowful. </p>
-            <br>
-            <p> Our goal is to alleviate anxiety and provide a sense of belonging. We
+            <br><br>
+            <p class="lg"> We hope our space can alleviate anxiety and provide a sense of belonging. We
               are committed to our community and will devote our time and resources to ensure that
-              everyone feels welcome and valued. </p>
+              everyone feels welcomed and valued. </p>
           </div>
         </div>
         <img class="vrcpepss-icon" loading="eager" alt="" src="/refuge/assets/uploads/Pngs/VrdjSS.png" />
       </section>
-      <section class="module002" id="hwinternal">
-        <h3>Take Refuge</h3>
-        <div class="hwcontatnoir">
-          <p>If you aren't yet aquainted with VRChat refer to <a
-              href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11">this
-              article</a> to get started.
-            <br>If you are already setup, skip this step and follow the links below to become a refugee.
-          </p>
+      <section class="module001" id="hwinternal">
 
-          <div class="hwjoinables">
-            <button class="component-2">
-              <div class="primary">Join discord</div>
-            </button>
-            <button class="component-3">
-              <div class="secondary">Join group</div>
-            </button>
+        <img class="take-refuge" src="/refuge/assets/uploads/SVGS/take-refuge.svg" />
+        <div class="module-stacker">
+          <div class="module001-text-container">
+          <div></div>
+            <p class="lg">If you aren't yet aquainted with VRChat refer to <a
+                href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11">this
+                article</a> to get started.
+              <br><br>If you are already setup, skip this step and follow the links below to become a refugee.
+            </p>
+            <br><br>
+            <div class="hwjoinables">
+              <button class="component-2">
+                <div class="primary">Join discord</div>
+              </button>
+              <button class="component-3">
+                <div class="secondary">Join group</div>
+              </button>
+            </div>
+
           </div>
-
-
         </div>
       </section>
 
@@ -212,30 +211,36 @@
       <div class="footercontanoir">
         <div class="footericonsholder">
           <div class="footerclubicons">
-       
-            <img class="rletter-icon" 
-            src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
+
+            <img class="rletter-icon"
+              src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
 
 
-          <img class="eletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+            <img class="eletter-icon"
+              src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
 
 
-          <img class="fletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
+            <img class="fletter-icon"
+              src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
 
 
-          <img class="uletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
+            <img class="uletter-icon"
+              src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
 
 
-          <img class="gletter-icon"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
+            <img class="gletter-icon"
+              src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
 
 
-          <img class="eletter-icon1"  src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+            <img class="eletter-icon1"
+              src="/refuge/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
 
 
           </div>
         </div>
         <div class="footersocialsicon">
-          <img class="catwasnthere-icon1" title="discord: @wasntcat" alt="" src="/refuge/assets/uploads/Extra/Catwasnthere.gif" />
+          <img class="catwasnthere-icon1" title="discord: @wasntcat" alt=""
+            src="/refuge/assets/uploads/Extra/Catwasnthere.gif" />
           <div class="footersocialicons">
             <img class="social-icons" alt="" src="./RSC/SVGS/social-icons.svg" />
             <img class="social-icons1" alt="" src="./RSC/SVGS/social-icons-1.svg" />
@@ -547,3 +552,151 @@
   var messenger = new Messenger($('#print-user'));
   </script>
 
+
+
+
+
+
+<script>
+  $('.herosection').ripples({
+    resolution: 1024,
+    dropRadius: 75,
+    perturbance: .002,
+  });
+</script>
+
+
+
+
+
+<!-- CURSOR -->
+
+<script>
+  var cursor = {
+  delay: 8,
+  _x: 0,
+  _y: 0,
+  endX: (window.innerWidth / 2),
+  endY: (window.innerHeight / 2),
+  cursorVisible: true,
+  cursorEnlarged: false,
+  $dot: document.querySelector('.cursor-dot'),
+  $outline: document.querySelector('.cursor-dot-outline'),
+  
+  init: function() {
+      // Set up element sizes
+      this.dotSize = this.$dot.offsetWidth;
+      this.outlineSize = this.$outline.offsetWidth;
+      
+      this.setupEventListeners();
+      this.animateDotOutline();
+  },
+  
+//     updateCursor: function(e) {
+//         var self = this;
+      
+//         console.log(e)
+      
+//         // Show the cursor
+//         self.cursorVisible = true;
+//         self.toggleCursorVisibility();
+
+//         // Position the dot
+//         self.endX = e.pageX;
+//         self.endY = e.pageY;
+//         self.$dot.style.top = self.endY + 'px';
+//         self.$dot.style.left = self.endX + 'px';
+//     },
+  
+  setupEventListeners: function() {
+      var self = this;
+      
+      // Anchor hovering
+      document.querySelectorAll('a').forEach(function(el) {
+          el.addEventListener('mouseover', function() {
+              self.cursorEnlarged = true;
+              self.toggleCursorSize();
+          });
+          el.addEventListener('mouseout', function() {
+              self.cursorEnlarged = false;
+              self.toggleCursorSize();
+          });
+      });
+      
+      // Click events
+      document.addEventListener('mousedown', function() {
+          self.cursorEnlarged = true;
+          self.toggleCursorSize();
+      });
+      document.addEventListener('mouseup', function() {
+          self.cursorEnlarged = false;
+          self.toggleCursorSize();
+      });
+
+
+      document.addEventListener('mousemove', function(e) {
+          // Show the cursor
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+
+          // Position the dot
+          self.endX = e.pageX;
+          self.endY = e.pageY;
+          self.$dot.style.top = self.endY + 'px';
+          self.$dot.style.left = self.endX + 'px';
+      });
+      
+      // Hide/show cursor
+      document.addEventListener('mouseenter', function(e) {
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+          self.$dot.style.opacity = 1;
+          self.$outline.style.opacity = 1;
+      });
+      
+      document.addEventListener('mouseleave', function(e) {
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+          self.$dot.style.opacity = 0;
+          self.$outline.style.opacity = 0;
+      });
+  },
+  
+  animateDotOutline: function() {
+      var self = this;
+      
+      self._x += (self.endX - self._x) / self.delay;
+      self._y += (self.endY - self._y) / self.delay;
+      self.$outline.style.top = self._y + 'px';
+      self.$outline.style.left = self._x + 'px';
+      
+      requestAnimationFrame(this.animateDotOutline.bind(self));
+  },
+  
+  toggleCursorSize: function() {
+      var self = this;
+      
+      if (self.cursorEnlarged) {
+          self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+          self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+      } else {
+          self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
+          self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
+      }
+  },
+  
+  toggleCursorVisibility: function() {
+      var self = this;
+      
+      if (self.cursorVisible) {
+          self.$dot.style.opacity = 1;
+          self.$outline.style.opacity = 1;
+      } else {
+          self.$dot.style.opacity = 0;
+          self.$outline.style.opacity = 0;
+      }
+  }
+}
+
+cursor.init();
+</script>
