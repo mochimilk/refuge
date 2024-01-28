@@ -1,0 +1,131 @@
+// .codertxt {
+//   height: 80px;
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   min-width: 372px;
+//   max-width: 100%
+// }
+
+.nav-container {
+  align-self: stretch;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%
+}
+
+.logo-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: exclusion;
+
+  max-width: 100%;
+  flex-shrink: 0;
+
+  
+}
+
+.refuge-logo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-20px) 0;
+  box-sizing: border-box;
+
+  width: 100%;
+  justify-content: space-between;
+
+
+}
+
+.refuge-logo img {
+
+    width: 12vw;
+}
+
+
+
+
+
+
+.coder-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 100%;
+  flex-shrink: 0
+}
+
+.coder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+
+.codertxt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: auto;
+  mix-blend-mode: hard-light;
+}
+
+
+.squaobj {
+
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.component-1 {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-4px);
+  box-sizing: border-box;
+  gap: 0;
+  row-gap: 20px
+}
+
+
+
+
+
+.radio-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 165px;
+  box-sizing: border-box;
+  letter-spacing: normal;
+
+font-family: var(--font-pp-neue-machina);
+  font-size: var(--font-size-sm);
+  color: var(  --color-lightgray);
+}

@@ -1,0 +1,64 @@
+// .wrapper {
+//     display: grid;
+//     place-items: left;
+// }
+
+
+
+// .typing {
+//     white-space: nowrap;
+//     overflow: hidden;
+//     border-right: 3px solid;
+//     font-family: var(--font-pp-neue-machina);
+//     font-size: var(--font-size-base);
+//     color: var(--color-lightgray);
+//     text-align: left;
+
+
+// }
+
+// #type-x {
+//     width: 8ch;
+//     animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+//     animation-fill-mode: both;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// #type-y {
+//     width: 7ch;
+//     animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+//     animation-delay: 1s;
+//     animation-fill-mode: both;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// #type-print {
+//     width: 34ch;
+//     animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+//     animation-delay: 2s;
+//     animation-fill-mode: both;
+// }
+
+
+// @keyframes typing {
+//     from {
+//         width: 0
+//     }
+// }
+
+// @keyframes blink {
+//     50% {
+//         border-color: transparent
+//     }
+// }
+
+.user-container {
+    display: flex;
+    text-align: left;
+    gap:8px;
+    white-space: nowrap;
+    
+}
+

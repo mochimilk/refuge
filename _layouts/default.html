@@ -1,91 +1,251 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang=" en-US">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
   <meta charset="utf-8">
+  <title></title>
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon/favicon.ico?' | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;700&display=swap" />
 </head>
 
+<script src="bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+
 <body>
-  {{ content }}
+  <div class="radio-box">
+    <div class="herosection" id="parallax">
+      <div class="nav-container">
+        <nav class="headertxt">
+          <a href="#abinternal">Main</a> / <a href="#abinternal">About</a> / <a href="#msinternal">Mission</a> / <a
+            href="#hwinternal">Take Refuge</a> / <a href="#cuinternal">Contact</a>
+        </nav>
+        <!-- <div class="fancyobj">
+                    <img class="glass002-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/GlassObj.png" />
+                </div> -->
+      </div>
+      <div class="logo-container">
+        <div class="refuge-logo">
 
-  <div class="bg"></div>
-  <div class="hello">
+          <img class="rletter-icon" 
+            src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
 
-    <div class="container-left">
 
-      {% include refuge-logo.html %}
-      <br>
-      <div class="artists">
+          <img class="eletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
 
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M23.2 20.3162C23.2 21.01 22.8027 21.6432 22.1692 21.9519L18.3974 23.8041C17.1598 24.4135 15.7021 23.527 15.7021 22.1683V11.5964C15.7021 10.9025 15.3047 10.2693 14.6712 9.96057L10.9933 8.15329C9.75575 7.54383 8.29804 8.43032 8.29804 9.78908V16.3982L8.2873 18.8835C8.28193 20.0629 7.02555 20.828 5.94636 20.3109L1.83092 18.2899C1.20005 17.9786 0.800049 17.3454 0.800049 16.6541L0.829579 4.26171C0.829579 3.57045 1.22958 2.93725 1.86045 2.62856L6.81347 0.193348C7.65106 -0.218237 8.67119 0.0455994 9.192 0.810725L14.8242 9.07672C15.345 9.84448 16.3651 10.111 17.2054 9.69673L20.4913 8.09525C21.7289 7.4937 23.1786 8.37491 23.1813 9.73103L23.2 20.3109V20.3162Z"
-            fill="white" />
-        </svg>
 
-        <br><br>
+          <img class="fletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
 
-        <p>
-          JCK • cosmoraver • english lad • dj pears • buki • IMPECCABLE • guigui • feathermoon • will hopeofhell • bobby
-          j •
-          ambrloaf • max tach • auxee • crossbone • almosdeff • ksk_u • kenjung chelsea • lostmelody • histarium • yama
-          •
-          ledinjo • yumyum catbuns • kalm4h • geoid • greenelixir • eu_logy • mayor of texas kitsunemixes • ayir •
-          trapsntrees • lavy • hesit • stayawhile • the bearded gentleman • myntt • nullcase fayyeT • keen • zoos •
-          AURAL STATE • NEPHIX • infinitysquared •
-          nickthenpc • vroku • unrealjourneys • propaganada • ritual • catmelt • zeroexcuse • jdj • medii • speculations
-          • Miko •
-          StampedinTurtl • Enderstick • Acutic • Dug • Sir Rose • Juoto
-        </p>
-        <br>
-        <svg width="200" height="15" viewBox="0 0 200 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="20" height="3" fill="#5BCEFA"/>
-          <rect y="3" width="20" height="3" fill="#F5A9B8"/>
-          <rect y="6" width="20" height="3" fill="white"/>
-          <rect y="9" width="20" height="3" fill="#F5A9B8"/>
-          <rect y="12" width="20" height="3" fill="#5BCEFA"/>
-          <rect x="36" width="20" height="2.14286" fill="#961C5C"/>
-          <rect x="36" y="2.14282" width="20" height="2.14286" fill="#B2548F"/>
-          <rect x="36" y="4.28564" width="20" height="2.14286" fill="#D164A4"/>
-          <rect x="36" y="6.42847" width="20" height="2.14286" fill="white"/>
-          <rect x="36" y="8.57153" width="20" height="2.14286" fill="#E3ABCE"/>
-          <rect x="36" y="10.7144" width="20" height="2.14286" fill="#C74D52"/>
-          <rect x="36" y="12.8572" width="20" height="2.14286" fill="#7C1D19"/>
-          <rect x="72" width="20" height="2.5" fill="#BE2124"/>
-          <rect x="72" y="2.5" width="20" height="2.5" fill="#EF4425"/>
-          <rect x="72" y="5" width="20" height="2.5" fill="#FBDD01"/>
-          <rect x="72" y="7.5" width="20" height="2.5" fill="#1D7F3F"/>
-          <rect x="72" y="10" width="20" height="2.5" fill="#3D54A5"/>
-          <rect x="72" y="12.5" width="20" height="2.5" fill="#7F2A90"/>
-          <rect x="108" width="20" height="5" fill="#ED2E8C"/>
-          <rect x="108" y="5" width="20" height="5" fill="#FDD700"/>
-          <rect x="108" y="10" width="20" height="5" fill="#478BCA"/>
-          <rect x="144" width="20" height="3.75" fill="#FDF433"/>
-          <rect x="144" y="3.75" width="20" height="3.75" fill="#FDFDFD"/>
-          <rect x="144" y="7.5" width="20" height="3.75" fill="#9C59CD"/>
-          <rect x="144" y="11.25" width="20" height="3.75" fill="#2D2D2D"/>
-          <rect x="180" width="20" height="5" fill="#D71773"/>
-          <rect x="180" y="5" width="20" height="5" fill="#734F96"/>
-          <rect x="180" y="10" width="20" height="5" fill="#1E429A"/>
-          </svg>
-          
+
+          <img class="uletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
+
+
+          <img class="gletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
+
+
+          <img class="eletter-icon1"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+
+        </div>
+      </div>
+      <div class="coder-container">
+        <div class="coder">
+          <!-- <div class="wrapper-glass001">
+                        <img class="glass001-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/GlassObj.png" />
+                    </div> -->
+          <div class="codertxt">
+            <!-- <div class="uppertxt">
+              <div class="input">[input]</div>
+              <div class="sextxt">
+                <div class="output">[output]</div>
+              </div>
+            </div>
+            <div class="lowertxt">
+              <div class="x-take-container">
+                <div class="wrapper">
+                  <p class="typing" id="type-x">x = take</p>
+                </div>
+                <div class="wrapper">
+                  <p class="typing" id="type-y">y = refuge</p>
+                </div>
+              </div>
+              <div class="outputtxt">
+---
+                <div class="wrapper">
+                  <div class="typing" id="type-print">
+                    print('The value of x is {} and y is {}'.format(x,y))
+                  </div>
+                </div>
+---
+              </div>
+            </div> -->
+
+            
+
+            <div class="codertxt-l">
+              <div class="input-sys">
+                [input]
+              </div>
+              <br>
+              <div class="input-user">
+                
+               <div class="user-container">x= <div id="x-user"></div></div>
+               <div class="user-container">y= <div id="y-user"></div></div> <br>
+              </div>
+            </div>
+            <div class="codertxt-r">
+              <div class="output-sys">
+                [output]
+              </div>
+              <br>
+              <div class="output-user">
+                <div class="user-container">print = <div id="print-user"></div></div>
+                <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+          <div class="squaobj">
+            <a class="component-1" href="#abinternal">
+              {% include stupidlyoverengineeredbtn.html %}
+
+              <!-- <div class="logo-container">
+                <img class="catwasnthere-icon" alt="" src="{{site.baseurl}}/assets/uploads/SVGS/Name.svg" />
+                <img class="c-u-emails" alt="" src="{{site.baseurl}}/assets/uploads/SVGS/Name2.svg" />
+              </div>
+              <div class="frame-parent">
+                <img class="frame-child" loading="eager" alt=""
+                  src="{{site.baseurl}}/assets/uploads/SVGS/group-63.svg" />
+                <img class="frame-item" loading="eager" alt=""
+                  src="{{site.baseurl}}/assets/uploads/SVGS/group-63.svg" />
+                <img class="frame-inner" alt="" src="{{site.baseurl}}/assets/uploads/SVGS/group-63.svg" />
+              </div>
+              <div class="logo-container1">
+                <img class="navbar-main-icon" alt="" src="{{site.baseurl}}/assets/uploads/SVGS/vector-27-1.svg" />
+                <img class="p-l-c-header-top" alt="" src="{{site.baseurl}}/assets/uploads/SVGS/vector-28-1.svg" />
+              </div> -->
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    {% include cyber-br.html %}
+    <div class="aboutus">
 
-    <div class="container-right">
-      {% include nav.html %}
-      {% include poster.html %}
+      <iframe width="100%" height="120"
+        src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FPorterRobinson%2Fzeddian-robinson-valentine-day-mix%2F"
+        frameborder="0"></iframe>
+      <section class="module001" id="abinternal">
+        <div class="module001-text-container">
+          <h3>About</h3>
+          <p> We are an inclusive community, both physically and virtually, that fosters a
+            judgment-free environment. Our community welcomes individuals from all walks of life, including
+            those who may feel like misfits or outcasts. We provide a safe haven where members can find
+            peace, love, kindness, freedom, support, sympathy, empathy, mentorship, and friendship. </p>
+        </div>
+        <img class="vrcdjss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/VrcpepSS.png" />
+      </section>
+      <section class="module001" id="msinternal">
+        <div class="module001-text-container">
+          <h3>Mission</h3>
+          <div class="we-are-an-container">
+            <p  > Our mission is to offer a comfortable and engaging platform for
+              entertainment and escapism through various forms of creative expression such as music, art,
+              media, gaming, dancing, and communication. We embrace diversity and celebrate both the
+              familiar and unfamiliar, the light and dark, the joyous and sorrowful. </p>
+            <br>
+            <p> Our goal is to alleviate anxiety and provide a sense of belonging. We
+              are committed to our community and will devote our time and resources to ensure that
+              everyone feels welcome and valued. </p>
+          </div>
+        </div>
+        <img class="vrcpepss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/VrdjSS.png" />
+      </section>
+      <section class="module002" id="hwinternal">
+        <h3>Take Refuge</h3>
+        <div class="hwcontatnoir">
+          <p>If you aren't yet aquainted with VRChat refer to <a
+              href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11">this
+              article</a> to get started.
+            <br>If you are already setup, skip this step and follow the links below to become a refugee.
+          </p>
+
+          <div class="hwjoinables">
+            <button class="component-2">
+              <div class="primary">Join discord</div>
+            </button>
+            <button class="component-3">
+              <div class="secondary">Join group</div>
+            </button>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <section class="module002" id="cuinternal">
+
+      </section>
+
     </div>
+    <footer>
+      <div class="footercontanoir">
+        <div class="footericonsholder">
+          <div class="footerclubicons">
+       
+            <img class="rletter-icon" 
+            src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
 
 
+          <img class="eletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
 
+
+          <img class="fletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
+
+
+          <img class="uletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
+
+
+          <img class="gletter-icon"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
+
+
+          <img class="eletter-icon1"  src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+
+
+          </div>
+        </div>
+        <div class="footersocialsicon">
+          <img class="catwasnthere-icon1" title="discord: @wasntcat" alt="" src="{{site.baseurl}}/assets/uploads/Extra/Catwasnthere.gif" />
+          <div class="footersocialicons">
+            <img class="social-icons" alt="" src="./RSC/SVGS/social-icons.svg" />
+            <img class="social-icons1" alt="" src="./RSC/SVGS/social-icons-1.svg" />
+            <img class="social-icons2" alt="" src="./RSC/SVGS/social-icons-2.svg" />
+            <img class="social-icons3" alt="" src="./RSC/SVGS/social-icons-3.svg" />
+            <img class="social-icons4" alt="" src="./RSC/SVGS/social-icons-4.svg" />
+            <img class="social-icons5" alt="" src="./RSC/SVGS/social-icons-5.svg" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-
 </body>
 
 </html>
+
+<script>
+  const parallax = document.getElementById("parallax");
+
+  window.addEventListener("scroll", function () {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * 0.7 + "px";
+  });
+</script>
+
+{% include typing_anim.html %}
+

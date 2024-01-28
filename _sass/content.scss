@@ -1,0 +1,30 @@
+
+
+.module001 {
+    align-self: stretch;
+    border-top: 1px solid var(--color-gray-300);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-24px) 0 0;
+    gap: var(--gap-32px);
+    max-width: 100%;
+    text-align: left;
+  }
+
+
+
+  .module002 {
+    align-self: stretch;
+    border-top: 1px solid var(--color-gray-300);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: var(--padding-24px) 0 0;
+    gap: var(--gap-16px);
+    max-width: 100%;
+    text-align: left;
+  }
+  

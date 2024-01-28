@@ -1,12 +1,10 @@
 ---
 ---
-
+$baseurl: "{{ site.baseurl }}";
 @import "base";
-@import "nav";
-@import "fonts";
-@import "cyber-br";
-@import "bg";
 @import "layout";
-@import "poster";
-@import "header";
-
+@import "fonts";
+@import "typing_anim";
+@import "stupidlyoverengineeredbtn";
+@import "hero";
+@import "content";
