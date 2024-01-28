@@ -577,7 +577,7 @@ footer {
   transition: 0.4s;
   cursor: pointer;
 }
-.stupidlyoverengineeredbtn img {
+.stupidlyoverengineeredbtn svg {
   transform: translateY(-16px);
   margin: 0px;
   float: left;
@@ -587,12 +587,13 @@ footer {
   -ms-transition: all ease 0.5s;
   transition: all ease 0.5s;
   overflow: visible;
+  stroke: var(--color-lightgray);
 }
 
 .stupidlyoverengineeredbtn:hover {
   outline-offset: calc(var(--g) / -3);
 }
-.stupidlyoverengineeredbtn:hover img {
+.stupidlyoverengineeredbtn:hover svg {
   transform: translateY(-144px);
 }
 

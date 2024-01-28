@@ -18,7 +18,7 @@
 
 
 
-img {
+svg {
     transform: translateY(-16px);
     margin: 0px;
     float: left;
@@ -28,6 +28,7 @@ img {
     -ms-transition: all ease 0.5s;
     transition: all ease 0.5s; 
     overflow: visible;
+    stroke: var(--color-lightgray);
 }
 
 
@@ -39,7 +40,7 @@ img {
   .stupidlyoverengineeredbtn:hover {
     outline-offset: calc(var(--g)/-3);
 
-    img {
+    svg {
     transform: translateY(-144px);
     }
   }
