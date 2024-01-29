@@ -21,7 +21,9 @@
 <!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
 <!-- why r u looking up my skirt o.o -->
 <!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
-<body>
+<body onmousemove="coordinate(event)">
+
+
   
     <div class="herosection" id="parallax">
       <div class="nav-container">
@@ -61,55 +63,33 @@
                         <img class="glass001-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/GlassObj.png" />
                     </div> -->
           <div class="codertxt">
-            <!-- <div class="uppertxt">
-              <div class="input">[input]</div>
-              <div class="sextxt">
-                <div class="output">[output]</div>
-              </div>
-            </div>
-            <div class="lowertxt">
-              <div class="x-take-container">
-                <div class="wrapper">
-                  <p class="typing" id="type-x">x = take</p>
-                </div>
-                <div class="wrapper">
-                  <p class="typing" id="type-y">y = refuge</p>
-                </div>
-              </div>
-              <div class="outputtxt">
----
-                <div class="wrapper">
-                  <div class="typing" id="type-print">
-                    print('The value of x is {} and y is {}'.format(x,y))
-                  </div>
-                </div>
----
-              </div>
-            </div> -->
 
 
 
             <div class="codertxt-l">
               <div class="input-sys">
-                [input]
+                [coordinates]
               </div>
               <br>
               <div class="input-user">
 
-                <div class="user-container">x= <div id="x-user"></div>
-                </div>
-                <div class="user-container">y= <div id="y-user"></div>
-                </div> <br>
+                x=00.
+                <input type="text" id="X">⊹
+                <br>
+                <br>
+                y=00.
+                <input type="text" id="Y">⊹
+
               </div>
             </div>
             <div class="codertxt-r">
               <div class="output-sys">
-                [output]
+                [alert!]
               </div>
               <br>
               <div class="output-user">
                 <div class="user-container">
-                  print =
+          
                   <div id="print-user"></div>
                 </div>
                 <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
@@ -147,7 +127,7 @@
             those who may feel like misfits or outcasts — and provides a safe haven where members can find
             peace, love, kindness, freedom, support, sympathy, empathy, mentorship, and friendship. </p>
         </div>
-        <img class="vrcdjss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/VrcpepSS.png" />
+        <img class="vrcdjss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/JPGs/VrcpepSS.jpg" />
       </section>
       <section class="module001" id="msinternal">
         <div class="module001-text-container">
@@ -163,7 +143,7 @@
               everyone feels welcomed and valued. </p>
           </div>
         </div>
-        <img class="vrcpepss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/VrdjSS.png" />
+        <img class="vrcpepss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/JPGs/VrdjSS.jpg" />
       </section>
       <section class="module001" id="hwinternal">
 
@@ -267,15 +247,27 @@
 {% include cursor.html %}
 {% include overlay.html %}
 
-
+<!-- RIPPLES -->
 <script>
   $('.herosection').ripples({
-    resolution: 1024,
-    dropRadius: 75,
-    perturbance: .002,
+    resolution: 256,
+    dropRadius: 128,
+    perturbance: .005,
   });
 </script>
 
+
+
+
+<!-- COORDINATES -->
+<script>
+  function coordinate(event) {
+      let x = event.clientX;
+      let y = event.clientY;
+      document.getElementById("X").value = x;
+      document.getElementById("Y").value = y;
+  }
+</script>
 
 
 
