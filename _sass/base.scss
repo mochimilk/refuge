@@ -22,11 +22,11 @@ html {
   --font-open-sans: "Open Sans";
   --font-pp-neue-machina: "PP Neue Machina";
   --font-size-12: 12px;
-   --font-size-16: 16px;
-   --font-size-20: 20px;
-   --font-size-24: 24px;
-   --font-size-32: 32px;
-   --font-size-48: 48px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-48: 48px;
   --gap-32px: 32px;
   --gap-40px: 40px;
   --gap-8px: 8px;
@@ -54,6 +54,7 @@ $media-screen-sm: 600px;
   width: 4px;
   background-color: #1f1f1f;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #7f7f7f;
   border-radius: 5px;
@@ -73,28 +74,3 @@ $media-screen-sm: 600px;
 ::-moz-selection {
   background: #00ffa3
 }
-
-
-
-/* unvisited link */
-a:link {
-  font-size: 14px;
-  color: var(--color-lightgray);
-  text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-  color: var(--color-lightgray);
-}
-
-/* mouse over link */
-a:hover {
-  text-decoration: underline;
-}
-
-/* selected link */
-a:active {
-  color: var(--color-lightgray);
-}
-

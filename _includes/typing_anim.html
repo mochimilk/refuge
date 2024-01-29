@@ -219,7 +219,7 @@
     
     m.animateIn = function(){
       if(m.current_length < m.messages[m.message].length){
-        m.current_length = m.current_length + 2;
+        m.current_length = m.current_length;
         if(m.current_length > m.messages[m.message].length) {
           m.current_length = m.messages[m.message].length;
         }
@@ -237,7 +237,7 @@
       if(m.fadeBuffer === false){
         m.fadeBuffer = [];
         for(var i = 0; i < m.messages[m.message].length; i++){
-          m.fadeBuffer.push({c: (Math.floor(Math.random()*12))+1, l: m.messages[m.message].charAt(i)});
+          m.fadeBuffer.push({c: (Math.floor(Math.random()*4)), l: m.messages[m.message].charAt(i)});
         }
       }
       
@@ -283,6 +283,8 @@
   console.clear();
   var messenger = new Messenger($('#print-user'));
   </script>
+
+
 
 
 

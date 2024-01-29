@@ -18,14 +18,16 @@
 <div class="bg"></div>
 <div class="cursor-dot-outline"></div>
 <div class="cursor-dot"></div>
-
+<!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
+<!-- why r u looking up my skirt o.o -->
+<!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
 <body>
-  <div class="radio-box">
+  
     <div class="herosection" id="parallax">
       <div class="nav-container">
         <nav>
           <a href="{{site.baseurl}}">Main</a> ⊹ <a href="#abinternal">About</a> ⊹ <a href="#msinternal">Mission</a> ⊹ <a
-            href="#hwinternal">Take Refuge</a> ⊹ <a href="#cuinternal">Contact</a>
+            href="#hwinternal">Take Refuge</a> ⊹ <a class="open-overlay">Credits</a>
         </nav>
         <!-- <div class="fancyobj">
                     <img class="glass002-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/GlassObj.png" />
@@ -106,7 +108,9 @@
               </div>
               <br>
               <div class="output-user">
-                <div class="user-container">print = <div id="print-user"></div>
+                <div class="user-container">
+                  print =
+                  <div id="print-user"></div>
                 </div>
                 <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
               </div>
@@ -153,7 +157,7 @@
               art,
               media, gaming, dancing, and communication. We embrace diversity and celebrate both the
               familiar and unfamiliar, the light and dark, the joyous and sorrowful. </p>
-            <br><br>
+            
             <p class="lg"> We hope our space can alleviate anxiety and provide a sense of belonging. We
               are committed to our community and will devote our time and resources to ensure that
               everyone feels welcomed and valued. </p>
@@ -163,16 +167,23 @@
       </section>
       <section class="module001" id="hwinternal">
 
-        <img class="take-refuge" src="{{site.baseurl}}/assets/uploads/SVGS/take-refuge.svg" />
+       
+
+
         <div class="module-stacker">
+          {% include ticker.html %}
           <div class="module001-text-container">
-          <div></div>
+            <div></div>
+            <div>
+
+            <div>
             <p class="lg">If you aren't yet aquainted with VRChat refer to <a
                 href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11">this
-                article</a> to get started.
-              <br><br>If you are already setup, skip this step and follow the links below to become a refugee.
+                article</a> to get started.</p>
+              <p class="lg">If you are already setup, skip this step and follow the links below to become a refugee.
             </p>
-            <br><br>
+          </div>
+
             <div class="hwjoinables">
               <button class="component-2">
                 <div class="primary">Join discord</div>
@@ -181,7 +192,7 @@
                 <div class="secondary">Join group</div>
               </button>
             </div>
-
+          </div>
           </div>
         </div>
       </section>
@@ -238,7 +249,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  
 </body>
 
 </html>
@@ -253,6 +264,8 @@
 </script>
 
 {% include typing_anim.html %}
+{% include cursor.html %}
+{% include overlay.html %}
 
 
 <script>
@@ -267,134 +280,3 @@
 
 
 
-<!-- CURSOR -->
-
-<script>
-  var cursor = {
-  delay: 8,
-  _x: 0,
-  _y: 0,
-  endX: (window.innerWidth / 2),
-  endY: (window.innerHeight / 2),
-  cursorVisible: true,
-  cursorEnlarged: false,
-  $dot: document.querySelector('.cursor-dot'),
-  $outline: document.querySelector('.cursor-dot-outline'),
-  
-  init: function() {
-      // Set up element sizes
-      this.dotSize = this.$dot.offsetWidth;
-      this.outlineSize = this.$outline.offsetWidth;
-      
-      this.setupEventListeners();
-      this.animateDotOutline();
-  },
-  
-//     updateCursor: function(e) {
-//         var self = this;
-      
-//         console.log(e)
-      
-//         // Show the cursor
-//         self.cursorVisible = true;
-//         self.toggleCursorVisibility();
-
-//         // Position the dot
-//         self.endX = e.pageX;
-//         self.endY = e.pageY;
-//         self.$dot.style.top = self.endY + 'px';
-//         self.$dot.style.left = self.endX + 'px';
-//     },
-  
-  setupEventListeners: function() {
-      var self = this;
-      
-      // Anchor hovering
-      document.querySelectorAll('a').forEach(function(el) {
-          el.addEventListener('mouseover', function() {
-              self.cursorEnlarged = true;
-              self.toggleCursorSize();
-          });
-          el.addEventListener('mouseout', function() {
-              self.cursorEnlarged = false;
-              self.toggleCursorSize();
-          });
-      });
-      
-      // Click events
-      document.addEventListener('mousedown', function() {
-          self.cursorEnlarged = true;
-          self.toggleCursorSize();
-      });
-      document.addEventListener('mouseup', function() {
-          self.cursorEnlarged = false;
-          self.toggleCursorSize();
-      });
-
-
-      document.addEventListener('mousemove', function(e) {
-          // Show the cursor
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-
-          // Position the dot
-          self.endX = e.pageX;
-          self.endY = e.pageY;
-          self.$dot.style.top = self.endY + 'px';
-          self.$dot.style.left = self.endX + 'px';
-      });
-      
-      // Hide/show cursor
-      document.addEventListener('mouseenter', function(e) {
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-          self.$dot.style.opacity = 1;
-          self.$outline.style.opacity = 1;
-      });
-      
-      document.addEventListener('mouseleave', function(e) {
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-          self.$dot.style.opacity = 0;
-          self.$outline.style.opacity = 0;
-      });
-  },
-  
-  animateDotOutline: function() {
-      var self = this;
-      
-      self._x += (self.endX - self._x) / self.delay;
-      self._y += (self.endY - self._y) / self.delay;
-      self.$outline.style.top = self._y + 'px';
-      self.$outline.style.left = self._x + 'px';
-      
-      requestAnimationFrame(this.animateDotOutline.bind(self));
-  },
-  
-  toggleCursorSize: function() {
-      var self = this;
-      
-      if (self.cursorEnlarged) {
-          self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-          self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-      } else {
-          self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-          self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
-      }
-  },
-  
-  toggleCursorVisibility: function() {
-      var self = this;
-      
-      if (self.cursorVisible) {
-          self.$dot.style.opacity = 1;
-          self.$outline.style.opacity = 1;
-      } else {
-          self.$dot.style.opacity = 0;
-          self.$outline.style.opacity = 0;
-      }
-  }
-}
-
-cursor.init();
-</script>
