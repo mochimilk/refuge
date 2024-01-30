@@ -1,58 +1,53 @@
 // buttons
 
-.primary {
-    position: relative;
-    font-size: var( --font-size-14);
-    line-height: 100%;
-    text-transform: uppercase;
-    font-family: var(--font-pp-neue-machina);
-    color: #000;
-    text-align: left
-  }
-  
-  .component-2 {
-    cursor: pointer;
-    border: none;
-    padding: var(--padding-14px) 10px var(--padding-12px);
-    background-color: #00ffa3;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap
-  }
-  
-  .component-2:hover {
-    background-color: #00cc70
-  }
-  
-  .secondary {
-    position: relative;
-    font-size: var( --font-size-14);
-    line-height: 100%;
-    text-transform: uppercase;
-    font-family: var(--font-pp-neue-machina);
-    color: var(--color-white);
-    text-align: left
-  }
-  
-  .component-3 {
-    cursor: pointer;
-    border: 1px solid var(--color-white);
-    padding: var(--padding-14px) var(--padding-9px) var(--padding-12px);
-    background-color: transparent;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-  }
-  
-  .component-3:hover {
-    background-color: #e6e6e617;
-    border: 1px solid #e6e6e6;
-    box-sizing: border-box
-  }
+a.btn-primary {
+  position: relative;
+  font-size: var(--font-size-14);
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: var(--font-pp-neue-machina);
+  color: #000;
+  text-align: left;
+  border: none;
+  padding: var(--padding-14px) 10px var(--padding-12px);
+  background-color: #00ffa3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap
+}
+
+a.btn-primary:hover {
+  background-color: #00cc70
+}
+
+
+a.btn-secondary {
+  position: relative;
+  font-size: var( --font-size-14);
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: var(--font-pp-neue-machina);
+  color: var(--color-white);
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid #ffffff50;
+  padding: var(--padding-14px) var(--padding-9px) var(--padding-12px);
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+}
+
+a.btn-secondary:hover {
+  background-color: #ffffff10;
+  border: 1px solid var(--color-white);
+}
+
+
 
 
 //   FOOTER

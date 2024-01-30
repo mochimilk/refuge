@@ -99,11 +99,13 @@ button {
     animation: 800s credits linear infinite;
     // animation-delay: 1s;
     margin: auto;
-    p{
-  
- 
+
+    p {
+
+
         font-family: var(--font-pp-neue-machina);
-        font-size: var(--font-size-16);}
+        font-size: var(--font-size-16);
+    }
 
 }
 
@@ -123,7 +125,7 @@ button {
     margin-bottom: 20px;
     font-size: 50px;
     text-align: center;
-    
+
 }
 
 @keyframes credits {

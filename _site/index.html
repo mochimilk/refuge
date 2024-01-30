@@ -1,4 +1,5 @@
-<html lang=" en-US">
+
+
 
 <head>
   <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -16,8 +17,7 @@
 
 
 <div class="bg"></div>
-<div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
+
 <!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
 <!-- why r u looking up my skirt o.o -->
 <!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
@@ -129,9 +129,10 @@
     </div>
     <div class="aboutus">
 
-      <iframe width="100%" height="120"
-        src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FPorterRobinson%2Fzeddian-robinson-valentine-day-mix%2F"
-        frameborder="0"></iframe>
+      <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FRefugeVR%2Fmedii-weekly-wednesday-house-055%2F" frameborder="0" ></iframe>
+
+
+
       <section class="module001" id="abinternal">
         <div class="module001-text-container">
           <h4>⊹ About</h4>
@@ -187,19 +188,19 @@
 
             <div>
             <p class="lg">If you aren't yet aquainted with VRChat refer to <a
-                href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11">this
+                href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11" target="_blank">this
                 article</a> to get started.</p>
               <p class="lg">If you are already setup, skip this step and follow the links below to become a refugee.
             </p>
           </div>
 
             <div class="hwjoinables">
-              <button class="component-2">
-                <div class="primary">Join discord</div>
-              </button>
-              <button class="component-3">
-                <div class="secondary">Join group</div>
-              </button>
+              <a class="btn-primary" target="_blank" href="https://discord.gg/refugevr">
+                Join discord
+              </a>
+              <a class="btn-secondary" target="_blank" href="https://vrc.group/REFUGE.2009">
+                Join group
+              </a>
             </div>
           </div>
           </div>
@@ -372,137 +373,7 @@
 
 
 
-CURSOR
 
-<script>
-    var cursor = {
-      delay: 8,
-      _x: 0,
-      _y: 0,
-      endX: (window.innerWidth / 2),
-      endY: (window.innerHeight / 2),
-      cursorVisible: true,
-      cursorEnlarged: false,
-      $dot: document.querySelector('.cursor-dot'),
-      $outline: document.querySelector('.cursor-dot-outline'),
-  
-      init: function () {
-        // Set up element sizes
-        this.dotSize = this.$dot.offsetWidth;
-        this.outlineSize = this.$outline.offsetWidth;
-  
-        this.setupEventListeners();
-        this.animateDotOutline();
-      },
-  
-      //     updateCursor: function(e) {
-      //         var self = this;
-  
-      //         console.log(e)
-  
-      //         // Show the cursor
-      //         self.cursorVisible = true;
-      //         self.toggleCursorVisibility();
-  
-      //         // Position the dot
-      //         self.endX = e.pageX;
-      //         self.endY = e.pageY;
-      //         self.$dot.style.top = self.endY + 'px';
-      //         self.$dot.style.left = self.endX + 'px';
-      //     },
-  
-      setupEventListeners: function () {
-        var self = this;
-  
-        // Anchor hovering
-        document.querySelectorAll('a').forEach(function (el) {
-          el.addEventListener('mouseover', function () {
-            self.cursorEnlarged = true;
-            self.toggleCursorSize();
-          });
-          el.addEventListener('mouseout', function () {
-            self.cursorEnlarged = false;
-            self.toggleCursorSize();
-          });
-        });
-  
-        // Click events
-        document.addEventListener('mousedown', function () {
-          self.cursorEnlarged = true;
-          self.toggleCursorSize();
-        });
-        document.addEventListener('mouseup', function () {
-          self.cursorEnlarged = false;
-          self.toggleCursorSize();
-        });
-  
-  
-        document.addEventListener('mousemove', function (e) {
-          // Show the cursor
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-  
-          // Position the dot
-          self.endX = e.pageX;
-          self.endY = e.pageY;
-          self.$dot.style.top = self.endY + 'px';
-          self.$dot.style.left = self.endX + 'px';
-        });
-  
-        // Hide/show cursor
-        document.addEventListener('mouseenter', function (e) {
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-          self.$dot.style.opacity = 1;
-          self.$outline.style.opacity = 1;
-        });
-  
-        document.addEventListener('mouseleave', function (e) {
-          self.cursorVisible = true;
-          self.toggleCursorVisibility();
-          self.$dot.style.opacity = 0;
-          self.$outline.style.opacity = 0;
-        });
-      },
-  
-      animateDotOutline: function () {
-        var self = this;
-  
-        self._x += (self.endX - self._x) / self.delay;
-        self._y += (self.endY - self._y) / self.delay;
-        self.$outline.style.top = self._y + 'px';
-        self.$outline.style.left = self._x + 'px';
-  
-        requestAnimationFrame(this.animateDotOutline.bind(self));
-      },
-  
-      toggleCursorSize: function () {
-        var self = this;
-  
-        if (self.cursorEnlarged) {
-          self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-          self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        } else {
-          self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-          self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
-        }
-      },
-  
-      toggleCursorVisibility: function () {
-        var self = this;
-  
-        if (self.cursorVisible) {
-          self.$dot.style.opacity = 1;
-          self.$outline.style.opacity = 1;
-        } else {
-          self.$dot.style.opacity = 0;
-          self.$outline.style.opacity = 0;
-        }
-      }
-    }
-  
-    cursor.init();
-  </script>
 <!-- <button type="button" class="open-overlay">OPEN LAYER</button> -->
 
 <section class="overlay" aria-hidden="true" tabindex="-1">

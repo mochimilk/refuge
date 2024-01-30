@@ -1,24 +1,22 @@
 .stupidlyoverengineeredbtn {
-    width: 36px;
-    height: 36px;
+  width: 36px;
+  height: 36px;
+  --s: 20px;
+  /* the size on the corner */
+  --t: 2px;
+  /* the thickness of the border */
+  --g: 20px;
+  /* the gap between the border and image */
+  padding: calc(var(--g) + var(--t));
+  outline: var(--t) solid #ffa692;
+  /* the color here */
+  outline-offset: calc(-1*var(--t));
+  -webkit-mask:
+    conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+  transition: .4s;
 
-    --s: 20px; /* the size on the corner */
-    --t: 2px;  /* the thickness of the border */
-    --g: 20px; /* the gap between the border and image */
-    
-    padding: calc(var(--g) + var(--t));
-    outline: var(--t) solid #ffa692; /* the color here */
-    outline-offset: calc(-1*var(--t));
-    -webkit-mask:
-      conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
-      0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-      linear-gradient(#000 0 0) content-box;
-    transition: .4s;
-
-
-
-
-svg {
+  svg {
     transform: translateY(-16px);
     margin: 0px;
     float: left;
@@ -26,24 +24,15 @@ svg {
     -moz-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
     -ms-transition: all ease 0.5s;
-    transition: all ease 0.5s; 
+    transition: all ease 0.5s;
     overflow: visible;
     stroke: #ffa692;
+  }
 }
 
-
-
-
-
-  }
-  
-  .stupidlyoverengineeredbtn:hover {
-    outline-offset: calc(var(--g)/-3);
-
-    svg {
+.stupidlyoverengineeredbtn:hover {
+  outline-offset: calc(var(--g)/-3);
+  svg {
     transform: translateY(-144px);
-    }
   }
-  
-
-  
+}

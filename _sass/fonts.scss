@@ -65,10 +65,22 @@ p.lg {
   margin-bottom: 24px; /* between paragraphs */
 }
 
+p.lg a:link {
+  font-size: var(--font-size-24);
+  color: var(--color-lightgray);
+  margin: 0;
+  margin-bottom: 24px; /* between paragraphs */
+  text-decoration: underline;
+}
+
+p.lg a:link:hover {
+
+  text-decoration: none;
+}
+
 
 /* unvisited link */
 a:link {
-  font-size: 14px;
   color: var(--color-lightgray);
   text-decoration: none;
 }
