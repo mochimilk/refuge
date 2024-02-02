@@ -1,0 +1,31 @@
+<div id="myNav" class="overlay-mobile-nav">
+
+	<div class="overlay-content">
+		<p>⊹</p>
+		<a href="#abinternal" onclick="closeNav()">[ About ]</a>
+		 <a href="#msinternal" onclick="closeNav()">[ Mission ]</a>
+		  <a href="#hwinternal" onclick="closeNav()">[ Take Refuge ]</a>
+		 <p>⊹</p>
+	</div>
+
+	<a type="button" class="close-overlay" onclick="closeNav()">Close [ESC]</a>
+
+</div>
+
+
+<script>
+	function openNav() {
+		document.getElementById("myNav").style.display = "block";
+	}
+
+	function closeNav() {
+		document.getElementById("myNav").style.display = "none";
+	}
+
+	document.body.addEventListener('keyup', (ev) => {
+		if (ev.key === "Escape" &&
+		document.getElementById("myNav").style.display == "block") {
+				document.getElementById("myNav").style.display = "none";
+		}
+	})
+</script>

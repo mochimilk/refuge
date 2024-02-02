@@ -28,7 +28,7 @@
     <div class="herosection" id="parallax">
       <div class="nav-container">
         <nav>
-          <a href="/refuge">Main</a> ⊹ <a href="#abinternal">About</a> ⊹ <a href="#msinternal">Mission</a> ⊹ <a
+          <a onclick="openNav()">Main</a> ⊹ <a href="#abinternal">About</a> ⊹ <a href="#msinternal">Mission</a> ⊹ <a
             href="#hwinternal">Take Refuge</a> ⊹ <a class="open-overlay">Credits</a>
         </nav>
         <!-- <div class="fancyobj">
@@ -136,11 +136,7 @@
       <section class="module001" id="abinternal">
         <div class="module001-text-container">
           <h4>⊹ About</h4>
-          <p class="lg"> We are an inclusive community that fosters a
-            judgment-free environment in both our virtual and physical worlds. Our community welcomes individuals from
-            all walks of life — including
-            those who may feel like misfits or outcasts — and provides a safe haven where members can find
-            peace, love, kindness, freedom, support, sympathy, empathy, mentorship, and friendship. </p>
+          <p class="lg"> Lull into the beating heart of our parallel universe, where the bass echoes through concrete walls, and dimly lit paths leads to an immersive experience like no other. We are Refuge, tucked away in the labyrinthine depths of virtual reality, where even the misfits and outcasts can find safe haven in the welcoming arms of their new community. </p>
         </div>
         <img class="vrcdjss-icon" loading="eager" alt="" src="/refuge/assets/uploads/JPGs/VrcpepSS.jpg" />
       </section>
@@ -208,10 +204,10 @@
       </section>
 
 
-
+<!-- 
       <section class="module002" id="cuinternal">
 
-      </section>
+      </section> -->
 
     </div>
     <footer>
@@ -373,48 +369,78 @@
 
 
 
-
 <!-- <button type="button" class="open-overlay">OPEN LAYER</button> -->
 
 <section class="overlay" aria-hidden="true" tabindex="-1">
 	<div>
-
 		<!-- Credits -->
 		<div class="outer-wrapper">
 			<div class="wrapper">
 				<div class="person_name">
-					<p>
-	
-						
-						Staff
+
+					<h4>Founding Team</h4>
+					<p> Medii ⊹ Speculations
+
+					<h4>Dev Team Lead</h4>
+					<p> Medii
+
+					<h4>3D Environment Design</h4>
+					<p> Miko ⊹ Wispy ⊹ Artsy
+
+					<h4>3D Asset Design</h4>
+					<p> moot ⊹ Khloe ⊹ Artsy
+
+					<h4>Scripters/coders</h4>
+					<p> vroku ⊹ Lavy ⊹ Tap ⊹ Flakedlotus ⊹ Fives
+
+					<h4>Creative Director</h4>
+					<p> meowmilk.
+
+					<h4>Art Director</h4>
+					<p> Propaganda
+
+					<h4>Senior Designers</h4>
+					<p> Miko ⊹ Juuoto ⊹ Soap ⊹ Feather
+
+					<h4>Marketing Manager</h4>
+					<p> Yuki
+
+					<h4>Instagram Manager</h4>
+					<p> Cheebzy
+
+					<h4>Twitch Manager</h4>
+					<p> Flakedlotus
+
+					<h4>Youtube Manager</h4>
+					<p> Medii
+
+					<h4>Twitter Engagement/Events Manager</h4>
+					<p> Figolo
+
+					<h4>Operations</h4>
+					<p> Shuubie ⊹ Medii ⊹ Soap ⊹ Feather ⊹ Yuki ⊹ Juuoto ⊹ Figolo ⊹ Speculations ⊹ JDJ ⊹ Hopeofhell ⊹
+						StampedinTurtl
+
+					<h4>Booking</h4>
+					<p> Enderstick (EU) ⊹ Feather (JP) ⊹ Miki (SA)
+
+<h4>Site made with 🤍 by</h4>
+<p>meowmilk. ⊹ wasntcat
+
+						<h4>Special Thanks</h4>
+						<p> catmelt ⊹ unrealjourneys
 
 
-<br><br>
 
-						<p>Founder ⊹ @medii
-						<p>Finance ⊹ @speculations
-						<p>Artist ⊹ @propaganda
-						<p>Social ⊹ @yuki
-							<p>Creative ⊹ @meowmilk.
-
-
-								<br><br>
-								DJs
-
-
-<br><br>
-
-						<p>Founder ⊹ @medii
-						<p>Finance ⊹ @speculations
-						<p>Artist ⊹ @propaganda
-						<p>Social ⊹ @yuki
-							<p>Creative ⊹ @meowmilk.
-				
+							<br><br>
+				<br><br>
+					<p> And most importantly, you.
+						<p>⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ 
+					<p> Thank you.
 
 				</div>
 			</div>
 			<!-- Credits -->
-
 			<a type="button" class="close-overlay">Close [ESC]</a>
 		</div>
 </section>
@@ -482,6 +508,37 @@
 			body.classList.toggle('noscroll', false);
 			openingBtt.focus();
 			openingBtt = null;
+		}
+	})
+</script>
+<div id="myNav" class="overlay-mobile-nav">
+
+	<div class="overlay-content">
+		<p>⊹</p>
+		<a href="#abinternal" onclick="closeNav()">[ About ]</a>
+		 <a href="#msinternal" onclick="closeNav()">[ Mission ]</a>
+		  <a href="#hwinternal" onclick="closeNav()">[ Take Refuge ]</a>
+		 <p>⊹</p>
+	</div>
+
+	<a type="button" class="close-overlay" onclick="closeNav()">Close [ESC]</a>
+
+</div>
+
+
+<script>
+	function openNav() {
+		document.getElementById("myNav").style.display = "block";
+	}
+
+	function closeNav() {
+		document.getElementById("myNav").style.display = "none";
+	}
+
+	document.body.addEventListener('keyup', (ev) => {
+		if (ev.key === "Escape" &&
+		document.getElementById("myNav").style.display == "block") {
+				document.getElementById("myNav").style.display = "none";
 		}
 	})
 </script>

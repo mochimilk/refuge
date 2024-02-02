@@ -28,7 +28,7 @@
     <div class="herosection" id="parallax">
       <div class="nav-container">
         <nav>
-          <a href="{{site.baseurl}}">Main</a> ⊹ <a href="#abinternal">About</a> ⊹ <a href="#msinternal">Mission</a> ⊹ <a
+          <a onclick="openNav()">Main</a> ⊹ <a href="#abinternal">About</a> ⊹ <a href="#msinternal">Mission</a> ⊹ <a
             href="#hwinternal">Take Refuge</a> ⊹ <a class="open-overlay">Credits</a>
         </nav>
         <!-- <div class="fancyobj">
@@ -122,11 +122,7 @@
       <section class="module001" id="abinternal">
         <div class="module001-text-container">
           <h4>⊹ About</h4>
-          <p class="lg"> We are an inclusive community that fosters a
-            judgment-free environment in both our virtual and physical worlds. Our community welcomes individuals from
-            all walks of life — including
-            those who may feel like misfits or outcasts — and provides a safe haven where members can find
-            peace, love, kindness, freedom, support, sympathy, empathy, mentorship, and friendship. </p>
+          <p class="lg"> Lull into the beating heart of our parallel universe, where the bass echoes through concrete walls, and dimly lit paths leads to an immersive experience like no other. We are Refuge, tucked away in the labyrinthine depths of virtual reality, where even the misfits and outcasts can find safe haven in the welcoming arms of their new community. </p>
         </div>
         <img class="vrcdjss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/JPGs/VrcpepSS.jpg" />
       </section>
@@ -179,10 +175,10 @@
       </section>
 
 
-
+<!-- 
       <section class="module002" id="cuinternal">
 
-      </section>
+      </section> -->
 
     </div>
     <footer>
@@ -245,8 +241,8 @@
 </script>
 
 {% include typing_anim.html %}
-
 {% include overlay.html %}
+{% include overlay-mobile-nav.html %}
 
 <!-- RIPPLES -->
 <script>
