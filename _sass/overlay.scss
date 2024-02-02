@@ -1,4 +1,5 @@
-/* to the body element */.noscroll {
+/* to the body element */
+.noscroll {
     overflow: hidden;
 }
 
@@ -22,14 +23,14 @@
     padding: 30px;
     height: 100vh;
     overflow: hidden;
-width: 100%;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
--ms-box-sizing: border-box;
--o-box-sizing: border-box;
-box-sizing: border-box;
-box-sizing: border-box;
-overflow: visible;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: visible;
 }
 
 .overlay {
@@ -146,8 +147,8 @@ button {
         top: 32px;
         right: 32px;
     }
-    
-  }
+
+}
 
 
 @media screen and (max-width: $media-screen-sm) {
@@ -155,5 +156,5 @@ button {
         top: 16px;
         right: 16px;
     }
-    
-  }
+
+}
