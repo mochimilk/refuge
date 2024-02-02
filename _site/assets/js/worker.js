@@ -1,14 +1,14 @@
 // worker.js
 onmessage = function (e) {
-    // Handle data received from the main thread
-    const result = processData(e.data);
-    // Send the result back to the main thread
-    postMessage(result);
-  };
-  function processData(data) {
-    // Perform my heavy computations or data processing here
+  // Handle data received from the main thread
+  const result = processData(e.data);
+  // Send the result back to the main thread
+  postMessage(result);
+};
+function processData(data) {
+  // Perform my heavy computations or data processing here
 
-
+  // RIPPLES
   $(document).ready(function () {
     try {
       $('.herosection').ripples({
@@ -56,10 +56,20 @@ onmessage = function (e) {
       $(".output-sys").hide();
     });
   });
+  // RIPPLES END
 
 
-    // ...
+
+// PARALLAX
+  const parallax = document.getElementById("parallax");
+
+  window.addEventListener("scroll", function () {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * 0.7 + "px";
+  });
+
+  // PARALLAX END
 
 
-    return processedData;
-  }
+  return processedData;
+}
