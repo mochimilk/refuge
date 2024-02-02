@@ -77,7 +77,14 @@
     row-gap: 20px
 }
 
-
+@media screen and (max-width: $media-screen-md) {
+    .coder {
+        grid-template-columns: 1fr;
+    }
+    .codertxt {
+        display: none;
+    }
+}
 
 @media screen and (max-width: $media-screen-sm) {
     .coder {

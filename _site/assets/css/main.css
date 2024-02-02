@@ -165,12 +165,6 @@ html {
 
 @media screen and (max-width: 1200px) {
   .aboutus {
-    padding: var(--padding-32px);
-    gap: 48px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .aboutus {
     padding: var(--padding-24px);
     gap: 32px;
   }
@@ -362,6 +356,14 @@ a:active {
   row-gap: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .coder {
+    grid-template-columns: 1fr;
+  }
+  .codertxt {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
   .coder {
     grid-template-columns: 1fr;
@@ -494,6 +496,22 @@ nav {
   margin: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .herosection {
+    padding: var(--padding-32px);
+  }
+  nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+  nav a:nth-child(2),
+  nav a:nth-child(3),
+  nav a:nth-child(4),
+  nav a:nth-child(5),
+  nav a:nth-child(6) {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
   .herosection {
     height: 80vh;
@@ -705,6 +723,13 @@ footer {
   max-width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: var(--padding-32px);
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+}
 @media screen and (max-width: 600px) {
   footer {
     padding: var(--padding-16px);

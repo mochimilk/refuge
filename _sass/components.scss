@@ -115,10 +115,19 @@ cursor: pointer;
   }
 
 
+  @media screen and (max-width: $media-screen-md) {
+    footer {
+      padding: var(--padding-32px);
+      padding-top: 64px;
+  padding-bottom: 32px;
+    }
+    
+  }
+    
+
   
 @media screen and (max-width: $media-screen-sm) {
   footer {
-
     padding: var(--padding-16px);
     padding-top: 64px;
 padding-bottom: 32px;
