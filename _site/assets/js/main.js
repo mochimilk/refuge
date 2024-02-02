@@ -1,3 +1,5 @@
+
+
 // main.js
 // Create a new Web Worker from the worker.js file
 const myWorker = new Worker('worker.js');
@@ -9,12 +11,16 @@ myWorker.onmessage = function (e) {
 const dataToProcess =
 
 
+
+
   // RIPPLES CORE
   /*!
    * jQuery Ripples plugin v0.5.3 / https://github.com/sirxemic/jquery.ripples
    * MIT License
    * @author sirxemic / https://sirxemic.com/
    */
+
+  
 
   (function (factory) {
     if (typeof define === 'function' && define.amd) {
@@ -1028,6 +1034,10 @@ document.body.addEventListener('keyup', (ev) => {
 })
 
   //CREDITS END
+
+  
+
+
 
   ;
 myWorker.postMessage(dataToProcess);
