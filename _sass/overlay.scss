@@ -8,7 +8,11 @@
     height: 100vh;
     overflow: hidden;
     inset: 0;
-
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 [aria-hidden="true"] {
@@ -33,11 +37,6 @@
     overflow: visible;
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-}
-
 a.close-overlay {
     color: #ffa692;
     mix-blend-mode: hard-light;
@@ -47,46 +46,19 @@ a.close-overlay {
     position: fixed;
     top: 64px;
     right: 64px;
-}
-
-button {
-    padding: 1.5em 4em;
     cursor: pointer;
-}
-
-.overlay {
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
 
 // CREDITS
-
-.outer-wrapper {
-    position: relative;
-    margin: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    display: block;
-
-
-}
-
 .wrapper {
     position: relative;
     width: 100%;
@@ -95,41 +67,27 @@ button {
     animation: 600s credits linear infinite;
     // animation-delay: 1s;
     margin: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
     display: inline-block;
+    text-align: center;
 
     p {
         font-family: var(--font-pp-neue-machina);
         font-size: var(--font-size-16);
     }
 
-}
-
-.wrapper h4 {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 50px;
-    text-align: center;
-    display: block;
-    color: #ffffff74;
-    font-family: var(--font-pp-neue-machina);
-    font-size: var(--font-size-16);
-    margin-top: 32px;
-    margin-bottom: 8px;
-}
-
-.person_name {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    display: block;
-    overflow: visible;
+    h4 {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 50px;
+        text-align: center;
+        display: block;
+        color: #ffffff74;
+        font-family: var(--font-pp-neue-machina);
+        font-size: var(--font-size-16);
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
 }
 
 @keyframes credits {
@@ -147,9 +105,7 @@ button {
         top: 32px;
         right: 32px;
     }
-
 }
-
 
 @media screen and (max-width: $media-screen-sm) {
     a.close-overlay {
