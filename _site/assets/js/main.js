@@ -6,55 +6,55 @@ myWorker.onmessage = function (e) {
   console.log('Received result from Web Worker:', e.data);
 };
 // Send data to the Web Worker for processing
-const dataToProcess = 
+const dataToProcess =
 
-// RIPPPLES
-$(document).ready(function () {
-  try {
-    $('.herosection').ripples({
-      resolution: 256,
-      dropRadius: 128,
-      perturbance: .005,
-    });
-  }
-  catch (e) {
-    $('.error').show().text(e);
-  }
-
+  // RIPPPLES
   $(document).ready(function () {
-    $(".js-ripples-play").hide();
-    $(".js-ripples-refresh").hide();
-    $(".output-sys-disabled").hide();
-    $(".output-sys-destroyed").hide();
-  });
+    try {
+      $('.herosection').ripples({
+        resolution: 256,
+        dropRadius: 128,
+        perturbance: .005,
+      });
+    }
+    catch (e) {
+      $('.error').show().text(e);
+    }
 
-  $('.js-ripples-disable').on('click', function () {
-    $('.herosection').ripples('destroy');
-    $('.js-ripples-disable').hide();
-    $('.js-ripples-refresh').show();
-    $(".output-sys-destroyed").show();
-    $('.inputs-destroyed').hide();
+    $(document).ready(function () {
+      $(".js-ripples-play").hide();
+      $(".js-ripples-refresh").hide();
+      $(".output-sys-disabled").hide();
+      $(".output-sys-destroyed").hide();
+    });
 
-    $(".output-sys").hide();
-    $(".output-sys-disabled").hide();
-  });
+    $('.js-ripples-disable').on('click', function () {
+      $('.herosection').ripples('destroy');
+      $('.js-ripples-disable').hide();
+      $('.js-ripples-refresh').show();
+      $(".output-sys-destroyed").show();
+      $('.inputs-destroyed').hide();
 
-  $('.js-ripples-play').on('click', function () {
-    $('.herosection').ripples('play');
-    $('.js-ripples-play').hide();
-    $('.js-ripples-pause').show();
-    $(".output-sys").show();
-    $(".output-sys-disabled").hide();
-  });
+      $(".output-sys").hide();
+      $(".output-sys-disabled").hide();
+    });
 
-  $('.js-ripples-pause').on('click', function () {
-    $('.herosection').ripples('pause');
-    $('.js-ripples-pause').hide();
-    $('.js-ripples-play').show();
-    $(".output-sys-disabled").show();
-    $(".output-sys").hide();
+    $('.js-ripples-play').on('click', function () {
+      $('.herosection').ripples('play');
+      $('.js-ripples-play').hide();
+      $('.js-ripples-pause').show();
+      $(".output-sys").show();
+      $(".output-sys-disabled").hide();
+    });
+
+    $('.js-ripples-pause').on('click', function () {
+      $('.herosection').ripples('pause');
+      $('.js-ripples-pause').hide();
+      $('.js-ripples-play').show();
+      $(".output-sys-disabled").show();
+      $(".output-sys").hide();
+    });
   });
-});
 // RIPPLES END
 
 
