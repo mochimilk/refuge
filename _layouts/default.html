@@ -80,24 +80,48 @@
               [coordinates]
             </div>
             <br>
-              x= 00.<input type="text" id="X">
-              <br>
-              y= 00.<input type="text" id="Y">
+            x= 0.<input type="text" id="X">
+            <br>
+            y= 0.<input type="text" id="Y">
           </div>
           <div class="codertxt-r">
             <div class="output-sys">
-              [alert!]
+              [ripples: enabled]
+            </div>
+            <div class="output-sys-disabled">
+              [ripples: paused]
+            </div>
+
+            <div class="output-sys-destroyed">
+              [ripples: destroyed]
             </div>
             <br>
-<!-- 
+            <!-- 
               <div class="user-container">
 
                 <div id="print-user"></div>
               </div> -->
-              ƒar  ƒr(o)m  høme[?] <br>
-              ẗⓐke reƒuge
-              <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
-    
+            <div class="inputs-destroyed">
+              <a class="js-ripples-pause" type="button">
+                > pause
+              </a>
+
+              <a class="js-ripples-play" type="button">
+                > enable
+              </a>
+              <br>
+
+            </div>
+            <a class="js-ripples-disable disable">
+              > destroy (use less resources)
+            </a>
+
+            <div class="js-ripples-refresh disable">
+              C:\Users\refuge\ripples.js error<br><a onClick="refreshPage()">page refresh required</a>
+            </div>
+
+            <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
+
           </div>
 
         </div>
@@ -250,11 +274,61 @@
 
 <!-- RIPPLES -->
 <script>
-  $('.herosection').ripples({
-    resolution: 256,
-    dropRadius: 128,
-    perturbance: .005,
+  $(document).ready(function () {
+    try {
+      $('.herosection').ripples({
+        resolution: 256,
+        dropRadius: 128,
+        perturbance: .005,
+      });
+
+    }
+    catch (e) {
+      $('.error').show().text(e);
+    }
+
+    $(document).ready(function () {
+      $(".js-ripples-play").hide();
+      $(".js-ripples-refresh").hide();
+      $(".output-sys-disabled").hide();
+      $(".output-sys-destroyed").hide();
+    });
+
+    $('.js-ripples-disable').on('click', function () {
+      $('.herosection').ripples('destroy');
+      $('.js-ripples-disable').hide();
+      $('.js-ripples-refresh').show();
+      $(".output-sys-destroyed").show();
+      $('.inputs-destroyed').hide();
+
+      $(".output-sys").hide();
+      $(".output-sys-disabled").hide();
+    });
+
+    $('.js-ripples-play').on('click', function () {
+      $('.herosection').ripples('play');
+      $('.js-ripples-play').hide();
+      $('.js-ripples-pause').show();
+      $(".output-sys").show();
+      $(".output-sys-disabled").hide();
+    });
+
+    $('.js-ripples-pause').on('click', function () {
+      $('.herosection').ripples('pause');
+      $('.js-ripples-pause').hide();
+      $('.js-ripples-play').show();
+      $(".output-sys-disabled").show();
+      $(".output-sys").hide();
+    });
   });
+
+</script>
+
+
+<script>
+  function refreshPage() {
+    window.location.reload();
+  } 
 </script>
 
 

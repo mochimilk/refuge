@@ -8,8 +8,6 @@
 .codertxt {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 100%;
-    min-width: 100%;
     mix-blend-mode: hard-light;
     font-family: var(--font-pp-neue-machina);
     font-size: var(--font-size-16);
@@ -17,18 +15,19 @@
 }
 
 .codertxt-l {
-    width: 100%;
+
     line-height: 125%;
 }
 
 .codertxt-r {
-    width: 100%;
+
     line-height: 125%;
 }
 
 .output-sys {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-wrap: nowrap;
 }
 
 .output-user {
@@ -60,11 +59,9 @@
 
 .squaobj {
     display: flex;
-    flex: 1;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 100%;
 }
 
 .component-1 {
@@ -81,19 +78,33 @@
 }
 
 @media screen and (max-width: $media-screen-md) {
-    .coder {
-        grid-template-columns: 1fr;
+
+    .coder-container {
+        align-self: stretch;
+        display: flex;
+
     }
+    .coder {
+        display: flex;
+        flex:1;
+
+        overflow: visible;
+    }
+
     .codertxt {
+        display: flex;
+        flex:1;
+
+    }
+
+    .codertxt-l {
         display: none;
     }
 }
 
 @media screen and (max-width: $media-screen-sm) {
-    .coder {
-        grid-template-columns: 1fr;
-    }
-    .codertxt {
+
+    .codertxt-l {
         display: none;
     }
 }
