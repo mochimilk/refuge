@@ -1,6 +1,3 @@
-
-
-
 <head>
   <meta name="viewport" content="initial-scale=1, width=device-width" />
   <meta charset="utf-8">
@@ -21,22 +18,188 @@
 <!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
 <!-- why r u looking up my skirt o.o -->
 <!-- ⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹⊹ -->
+
 <body onmousemove="coordinate(event)">
 
 
-  
-    <div class="herosection" id="parallax">
-      <div class="nav-container">
-        <nav>
-          <a onclick="openNav()">Main</a> ⊹ <a href="#abinternal">About</a> ⊹ <a href="#msinternal">Mission</a> ⊹ <a
-            href="#hwinternal">Take Refuge</a> ⊹ <a class="open-overlay">Credits</a>
-        </nav>
-        <!-- <div class="fancyobj">
+
+  <div class="herosection" id="parallax">
+    <div class="nav-container">
+      <nav>
+        <a onclick="openNav()">Main</a>
+        ⊹
+        <a href="#abinternal">About</a>
+        ⊹
+        <a href="#msinternal">Mission</a>
+        ⊹
+        <a href="#hwinternal">Take Refuge</a>
+        ⊹
+        <a href="https://refugevr.store/" target="_blank" onclick="closeNav()">Merch</a>
+        ⊹
+        <a href="https://ko-fi.com/refugevr" target="_blank" onclick="closeNav()">Ko-Fi</a>
+        ⊹
+        <a class="open-overlay">Credits</a>
+      </nav>
+      <!-- <div class="fancyobj">
                     <img class="glass002-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/GlassObj.png" />
                 </div> -->
+    </div>
+    <div class="logo-container">
+      <div class="refuge-logo">
+
+        <img class="rletter-icon" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
+
+
+        <img class="eletter-icon" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+
+
+        <img class="fletter-icon" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
+
+
+        <img class="uletter-icon" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
+
+
+        <img class="gletter-icon" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
+
+
+        <img class="eletter-icon1" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
+
       </div>
-      <div class="logo-container">
-        <div class="refuge-logo">
+    </div>
+    <div class="coder-container">
+      <div class="coder">
+        <!-- <div class="wrapper-glass001">
+                        <img class="glass001-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/GlassObj.png" />
+                    </div> -->
+        <div class="codertxt">
+
+
+
+          <div class="codertxt-l">
+            <div class="input-sys">
+              [coordinates]
+            </div>
+            <br>
+            <div class="input-user">
+
+              x=00.
+              <input type="text" id="X">⊹
+              <br>
+              <br>
+              y=00.
+              <input type="text" id="Y">⊹
+
+            </div>
+          </div>
+          <div class="codertxt-r">
+            <div class="output-sys">
+              [alert!]
+            </div>
+            <br>
+            <div class="output-user">
+              <div class="user-container">
+
+                <div id="print-user"></div>
+              </div>
+              <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="squaobj">
+          <a class="component-1" href="#abinternal">
+            {% include stupidlyoverengineeredbtn.html %}
+
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="aboutus">
+
+    <iframe width="100%" height="120"
+      src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FRefugeVR%2Fmedii-weekly-wednesday-house-055%2F"
+      frameborder="0"></iframe>
+
+
+
+    <section class="module001" id="abinternal">
+      <div class="module001-text-container">
+        <h4>⊹ About</h4>
+        <p class="lg"> Lull into the beating heart of our parallel universe, where the bass echoes through concrete
+          walls, and dimly lit paths leads to an immersive experience like no other. We are Refuge, tucked away in the
+          labyrinthine depths of virtual reality, where even the misfits and outcasts can find safe haven in the
+          welcoming arms of their new community. </p>
+      </div>
+      <img class="vrcdjss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/JPGs/VrcpepSS.jpg" />
+    </section>
+    <section class="module001" id="msinternal">
+      <div class="module001-text-container">
+        <h4>⊹ Mission</h4>
+        <div class="module-stacker">
+          <p class="lg"> Our mission is to create a safe space for diverse forms of creative expression across music,
+            art,
+            media, gaming, dancing, and communication. We embrace diversity and celebrate both the
+            familiar and unfamiliar, the light and dark, the joyous and sorrowful. </p>
+
+          <p class="lg"> We hope our space can alleviate anxiety and provide a sense of belonging. We
+            are committed to our community and will devote our time and resources to ensure that
+            everyone feels welcomed and valued. </p>
+        </div>
+      </div>
+      <img class="vrcpepss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/JPGs/VrdjSS.jpg" />
+    </section>
+    <section class="module001" id="hwinternal">
+
+
+
+
+      <div class="module-stacker">
+        {% include ticker.html %}
+        <div class="module001-text-container">
+          <div></div>
+          <div>
+
+            <div>
+              <p class="lg">If you aren't yet aquainted with VRChat refer to <a
+                  href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11"
+                  target="_blank">this
+                  article</a> to get started.</p>
+              <p class="lg">If you are already setup, skip this step and follow the links below to become a refugee.
+              </p>
+            </div>
+
+            <div class="hwjoinables">
+              <a class="btn-primary" target="_blank" href="https://discord.gg/refugevr">
+                Join discord
+              </a>
+              <a class="btn-secondary" target="_blank" href="https://vrc.group/REFUGE.2009">
+                Join group
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 
+      <section class="module002" id="cuinternal">
+
+      </section> -->
+
+  </div>
+  <footer>
+    <div class="footercontanoir">
+      <div class="footericonsholder">
+        <div class="footerclubicons">
 
           <img class="rletter-icon" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
 
@@ -55,170 +218,24 @@
 
           <img class="eletter-icon1" src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
 
+
         </div>
       </div>
-      <div class="coder-container">
-        <div class="coder">
-          <!-- <div class="wrapper-glass001">
-                        <img class="glass001-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/Pngs/GlassObj.png" />
-                    </div> -->
-          <div class="codertxt">
+      <div class="footer-nav">
+        <a href="https://discord.gg/refugevr" target="_blank">Discord</a> ⊹ <a
+          href="https://www.instagram.com/refuge_vr/" target="_blank">Insta</a> ⊹ <a
+          href="https://twitter.com/refuge_vr" target="_blank">X</a> ⊹ <a href="https://www.twitch.tv/refugevr"
+          target="_blank">Twitch</a> ⊹ <a href="https://www.youtube.com/@RefugeVR" target="_blank">Youtube</a> ⊹ <a
+          href="https://www.tiktok.com/@refugevr" target="_blank">Tiktok</a>
 
+        ⊹ <a href="https://soundcloud.com/refugevr" target="_blank">Soundcloud</a> ⊹ <a
+          href="https://www.mixcloud.com/RefugeVR/" target="_blank">Mixcloud</a>
 
-
-            <div class="codertxt-l">
-              <div class="input-sys">
-                [coordinates]
-              </div>
-              <br>
-              <div class="input-user">
-
-                x=00.
-                <input type="text" id="X">⊹
-                <br>
-                <br>
-                y=00.
-                <input type="text" id="Y">⊹
-
-              </div>
-            </div>
-            <div class="codertxt-r">
-              <div class="output-sys">
-                [alert!]
-              </div>
-              <br>
-              <div class="output-user">
-                <div class="user-container">
-          
-                  <div id="print-user"></div>
-                </div>
-                <!-- print('The value of x is {} and y is {}'.format(x,y)) -->
-              </div>
-            </div>
-
-          </div>
-
-
-
-
-
-
-          <div class="squaobj">
-            <a class="component-1" href="#abinternal">
-              {% include stupidlyoverengineeredbtn.html %}
-
-
-            </a>
-          </div>
-        </div>
       </div>
-    </div>
-    <div class="aboutus">
-
-      <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FRefugeVR%2Fmedii-weekly-wednesday-house-055%2F" frameborder="0" ></iframe>
-
-
-
-      <section class="module001" id="abinternal">
-        <div class="module001-text-container">
-          <h4>⊹ About</h4>
-          <p class="lg"> Lull into the beating heart of our parallel universe, where the bass echoes through concrete walls, and dimly lit paths leads to an immersive experience like no other. We are Refuge, tucked away in the labyrinthine depths of virtual reality, where even the misfits and outcasts can find safe haven in the welcoming arms of their new community. </p>
-        </div>
-        <img class="vrcdjss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/JPGs/VrcpepSS.jpg" />
-      </section>
-      <section class="module001" id="msinternal">
-        <div class="module001-text-container">
-          <h4>⊹ Mission</h4>
-          <div class="module-stacker">
-            <p class="lg"> Our mission is to create a safe space for diverse forms of creative expression across music,
-              art,
-              media, gaming, dancing, and communication. We embrace diversity and celebrate both the
-              familiar and unfamiliar, the light and dark, the joyous and sorrowful. </p>
-            
-            <p class="lg"> We hope our space can alleviate anxiety and provide a sense of belonging. We
-              are committed to our community and will devote our time and resources to ensure that
-              everyone feels welcomed and valued. </p>
-          </div>
-        </div>
-        <img class="vrcpepss-icon" loading="eager" alt="" src="{{site.baseurl}}/assets/uploads/JPGs/VrdjSS.jpg" />
-      </section>
-      <section class="module001" id="hwinternal">
-
-       
-
-
-        <div class="module-stacker">
-          {% include ticker.html %}
-          <div class="module001-text-container">
-            <div></div>
-            <div>
-
-            <div>
-            <p class="lg">If you aren't yet aquainted with VRChat refer to <a
-                href="https://medium.com/vrchat/stuck-inside-a-quick-guide-for-using-vrchat-to-stay-connected-f71430cf8a11" target="_blank">this
-                article</a> to get started.</p>
-              <p class="lg">If you are already setup, skip this step and follow the links below to become a refugee.
-            </p>
-          </div>
-
-            <div class="hwjoinables">
-              <a class="btn-primary" target="_blank" href="https://discord.gg/refugevr">
-                Join discord
-              </a>
-              <a class="btn-secondary" target="_blank" href="https://vrc.group/REFUGE.2009">
-                Join group
-              </a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-
-
-<!-- 
-      <section class="module002" id="cuinternal">
-
-      </section> -->
 
     </div>
-    <footer>
-      <div class="footercontanoir">
-        <div class="footericonsholder">
-          <div class="footerclubicons">
+  </footer>
 
-            <img class="rletter-icon"
-              src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-r.svg" />
-
-
-            <img class="eletter-icon"
-              src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
-
-
-            <img class="fletter-icon"
-              src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-f.svg" />
-
-
-            <img class="uletter-icon"
-              src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-u.svg" />
-
-
-            <img class="gletter-icon"
-              src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-g.svg" />
-
-
-            <img class="eletter-icon1"
-              src="{{site.baseurl}}/assets/uploads/SVGS/refuge-logo-letters/logo-letter-e.svg" />
-
-
-          </div>
-        </div>
-        <div class="footer-nav">
-          <a href="https://discord.gg/refugevr">Discord</a> ⊹ <a href="https://www.instagram.com/refuge_vr/">Insta</a> ⊹ <a href="https://twitter.com/refuge_vr">X</a> ⊹ <a
-            href="https://www.twitch.tv/refugevr">Twitch</a> ⊹ <a href="https://www.youtube.com/@RefugeVR">Youtube</a> ⊹ <a href="https://www.tiktok.com/@refugevr">Tiktok</a>
-        </div>
-      </div>
-    </footer>
-  
 </body>
 
 </html>
@@ -251,13 +268,9 @@
 <!-- COORDINATES -->
 <script>
   function coordinate(event) {
-      let x = event.clientX;
-      let y = event.clientY;
-      document.getElementById("X").value = x;
-      document.getElementById("Y").value = y;
+    let x = event.clientX;
+    let y = event.clientY;
+    document.getElementById("X").value = x;
+    document.getElementById("Y").value = y;
   }
 </script>
-
-
-
-
