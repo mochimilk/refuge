@@ -2,6 +2,7 @@ body {
   line-height: normal;
   margin: 0;
   background: #101010;
+  user-select: none;
 }
 
 html {
@@ -298,10 +299,12 @@ a:active {
 
 .codertxt-l {
   width: 100%;
+  line-height: 125%;
 }
 
 .codertxt-r {
   width: 100%;
+  line-height: 125%;
 }
 
 .output-sys {
@@ -420,7 +423,7 @@ a:active {
   padding: var(--padding-64px);
   box-sizing: border-box;
   gap: var(--gap-8px);
-  background: url("/refuge/assets/uploads/JPGs/AnimeHeroBG.jpg");
+  background: url("/assets/uploads/JPGs/AnimeHeroBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -955,13 +958,13 @@ body {
 .ticker {
   display: inline-block;
   margin-top: 5px;
-  animation: marquee 50s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 
 .item-collection-1 {
   position: relative;
   left: 0%;
-  animation: swap 50s linear infinite;
+  animation: swap 25s linear infinite;
 }
 
 .item {
