@@ -6,6 +6,7 @@ myWorker.onmessage = function (e) {
   console.log('Received result from Web Worker:', e.data);
 };
 // Send data to the Web Worker for processing
+<<<<<<< HEAD
 const dataToProcess =
 
   // RIPPPLES
@@ -70,4 +71,7 @@ window.addEventListener("scroll", function () {
 
 
 ;
+=======
+const dataToProcess = /* my data here */;
+>>>>>>> parent of 387bdd9 (2024.7.16)
 myWorker.postMessage(dataToProcess);

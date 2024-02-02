@@ -1,14 +1,14 @@
 // worker.js
 onmessage = function (e) {
-  // Handle data received from the main thread
-  const result = processData(e.data);
-  // Send the result back to the main thread
-  postMessage(result);
-};
-function processData(data) {
-  // Perform my heavy computations or data processing here
+    // Handle data received from the main thread
+    const result = processData(e.data);
+    // Send the result back to the main thread
+    postMessage(result);
+  };
+  function processData(data) {
+    // Perform my heavy computations or data processing here
 
-  // RIPPLES
+
   $(document).ready(function () {
     try {
       $('.herosection').ripples({
@@ -56,9 +56,9 @@ function processData(data) {
       $(".output-sys").hide();
     });
   });
-  // RIPPLES END
 
 
+<<<<<<< HEAD
 
   // PARALLAX
   const parallax = document.getElementById("parallax");
@@ -72,3 +72,10 @@ function processData(data) {
 
   return processedData;
 }
+=======
+    // ...
+
+
+    return processedData;
+  }
+>>>>>>> parent of 387bdd9 (2024.7.16)
