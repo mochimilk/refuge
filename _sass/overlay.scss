@@ -141,7 +141,13 @@ button {
     }
 }
 
-
+@media screen and (max-width: $media-screen-md) {
+    a.close-overlay {
+        top: 32px;
+        right: 32px;
+    }
+    
+  }
 
 
 @media screen and (max-width: $media-screen-sm) {

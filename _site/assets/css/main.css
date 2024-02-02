@@ -868,6 +868,12 @@ button {
     top: -3600%;
   }
 }
+@media screen and (max-width: 1200px) {
+  a.close-overlay {
+    top: 32px;
+    right: 32px;
+  }
+}
 @media screen and (max-width: 600px) {
   a.close-overlay {
     top: 16px;
