@@ -10,6 +10,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/worker.js"></script>
 
 
 
@@ -166,8 +168,8 @@
     <section class="module001" id="abinternal">
       <div class="module001-text-container">
         <h4>⊹ About</h4>
-        <p class="lg"> Lull into the beating heart of our parallel universe, where the bass echoes through concrete
-          walls, and dimly lit paths leads to an immersive experience like no other. We are Refuge, tucked away in the
+        <p class="lg"> Drift into the lulling pulse of our parallel universe, where synths echo against concrete
+          walls, and dimly lit paths open doors to a new class of immersion. We are Refuge, tucked away in the
           labyrinthine depths of virtual reality, where even the misfits and outcasts can find safe haven in the
           welcoming arms of their new community. </p>
       </div>
@@ -570,57 +572,7 @@
 	})
 </script>
 
-<!-- RIPPLES -->
-<script>
-  $(document).ready(function () {
-    try {
-      $('.herosection').ripples({
-        resolution: 256,
-        dropRadius: 128,
-        perturbance: .005,
-      });
 
-    }
-    catch (e) {
-      $('.error').show().text(e);
-    }
-
-    $(document).ready(function () {
-      $(".js-ripples-play").hide();
-      $(".js-ripples-refresh").hide();
-      $(".output-sys-disabled").hide();
-      $(".output-sys-destroyed").hide();
-    });
-
-    $('.js-ripples-disable').on('click', function () {
-      $('.herosection').ripples('destroy');
-      $('.js-ripples-disable').hide();
-      $('.js-ripples-refresh').show();
-      $(".output-sys-destroyed").show();
-      $('.inputs-destroyed').hide();
-
-      $(".output-sys").hide();
-      $(".output-sys-disabled").hide();
-    });
-
-    $('.js-ripples-play').on('click', function () {
-      $('.herosection').ripples('play');
-      $('.js-ripples-play').hide();
-      $('.js-ripples-pause').show();
-      $(".output-sys").show();
-      $(".output-sys-disabled").hide();
-    });
-
-    $('.js-ripples-pause').on('click', function () {
-      $('.herosection').ripples('pause');
-      $('.js-ripples-pause').hide();
-      $('.js-ripples-play').show();
-      $(".output-sys-disabled").show();
-      $(".output-sys").hide();
-    });
-  });
-
-</script>
 
 
 <script>
