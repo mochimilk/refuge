@@ -802,14 +802,17 @@ a.close-overlay {
   }
 }
 .wrapper {
-  position: relative;
-  width: 100%;
-  font-family: var(--font-pp-neue-machina);
-  font-size: var(--font-size-16);
-  animation: 600s credits linear infinite;
-  margin: auto;
-  display: inline-block;
+  height: 100%;
   text-align: center;
+  font-size: var(--font-size-16);
+  overflow: scroll;
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -moz-animation: my-animation 30s linear infinite;
+  -webkit-animation: my-animation 30s linear infinite;
+  animation: my-animation 30s linear infinite;
 }
 .wrapper p {
   font-family: var(--font-pp-neue-machina);
@@ -829,12 +832,34 @@ a.close-overlay {
   margin-bottom: 8px;
 }
 
-@keyframes credits {
-  0% {
-    top: 80%;
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
   }
-  100% {
-    top: -3600%;
+  to {
+    -moz-transform: translateY(-100%);
+  }
+}
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
 @media screen and (max-width: 1200px) {
